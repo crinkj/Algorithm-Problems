@@ -38,8 +38,25 @@ public class Algorithm {
 //					System.out.print(num + " ");
 //				}
 //           input: 125 output: 125 125 125
-	
-	
+//	* Problem 1018
+//		Problem: 어떤 형식에 맞추어 시간이 입력될 때, 그대로 출력하는 연습을 해보자.
+//		
+//			Scanner sc = new Scanner(System.in);
+//			
+//			String tm = sc.nextLine();
+//			System.out.println(tm);
+//		input: 3:15 output: 3:15
+//	* Problem 1023
+//		Problem: 실수 1개를 입력받아 정수 부분과 실수 부분으로 나누어 출력한다.
+			
+//		Scanner sc = new Scanner(System.in);
+//        
+//        String array1[] = sc.next().split("\\.");
+//        
+//        for (int i=0; i< array1.length; i++) {
+//        	System.out.println(array1[i]);
+//  
+//       }
 		
 	}	
 	

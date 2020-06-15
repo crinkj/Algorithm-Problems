@@ -1,5 +1,6 @@
 package AlgorithmProblem;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Algorithm {
@@ -47,7 +48,8 @@ public class Algorithm {
 //			System.out.println(tm);
 //		input: 3:15 output: 3:15
 //	* Problem 1023
-//		Problem: 실수 1개를 입력받아 정수 부분과 실수 부분으로 나누어 출력한다.
+//		Problem: 실수 1개를 입력받아 정수 부분과 실수 부분으로 나누어 출력한다.   
+//     * 나눌때는 꼭 특수기호앞에 \\ 붙힐것. 
 			
 //		Scanner sc = new Scanner(System.in);
 //        
@@ -57,7 +59,18 @@ public class Algorithm {
 //        	System.out.println(array1[i]);
 //  
 //       }
-		
+//	* Problem 1038
+//		Problem: 정수 2개를 입력받아 합을 출력하는 프로그램을 작성해보자.
+//		(단, 입력되는 정수는 -1073741824 ~ 1073741824 이다.)
+//		* 자릿수가 많은 Integer는 java.math.BigInteger 에 있는 변수 BigInteger를 써야된다.
+//		
+//		  Scanner sc = new Scanner(System.in);
+//	        
+//	        BigInteger num1 = sc.nextBigInteger();
+//	        BigInteger num2 = sc.nextBigInteger();
+//	        
+//	        
+//	        System.out.println(num1.add(num2));
 	}	
 	
 }

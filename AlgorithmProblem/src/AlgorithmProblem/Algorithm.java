@@ -196,7 +196,104 @@ public class Algorithm {
 //		    }
 //		
 //		     input: 1 2 5  output: odd even odd 
+
+//		* Problem 1070
+//		Problem:월이 입력될 때 계절 이름이 출력되도록 해보자.
 		
+//		 Scanner sc = new Scanner(System.in);
+//	        int num1 = sc.nextInt();
+//	        
+//	        switch(num1){
+//	        	case 12:
+//	            case 1:
+//	            case 2:
+//	                System.out.println("winter");
+//	                break;
+//	            case 3:
+//	            case 4:
+//	            case 5:
+//	                System.out.println("spring");
+//	                break;
+//	            case 6:
+//	            case 7:
+//	            case 8:
+//	                System.out.println("summer");   
+//	                break;
+//	            case 9:
+//	            case 10:
+//	            case 11:
+//	                System.out.println("fall");   /// 9, 10 , 11 은 어차피 fall이므로 11에 응답만해주면 출력되고 break으로 끊긴다.
+//	                break;
+//	        } 
+
+//  		input: 4 	output:spring
+
+// ************************* Goto Statement: a statement performs a one - way transfer of control to anothe rline of code( it supports some languagues, not all).
+		
+//		* Problem 1071
+//		Problem:0이 아니면 입력된 정수를 출력하고, 0이 입력되면 출력을 중단해보자.  ( there is no goto statement in java, so used while loop)
+		
+//		Scanner sc = new Scanner(System.in);
+		
+//        while(true){						// break가 작동전까지 계속 돌아감
+//            int num1 = sc.nextInt();
+//            
+//            if(num1 == 0){
+//                break;        			// 0일때 반복문 작동안하게
+//            }else{
+//                System.out.println(num1);
+//            }
+//        }
+
+//  input and output: it asks you a number until you type 0;
+
+//	* Problem 1074
+//	   Problem: 정수(1 ~ 100) 1개가 입력되었을 때 카운트다운을 출력해보자.
+		
+//		 Scanner sc = new Scanner(System.in);
+//	        
+//	        int num = sc.nextInt();
+//	        
+//	        for(int i = num; i > 0; i--){
+//	            System.out.println(i);
+//	        }
+//	       
+//	        input: 5 output: 5 4 3 2 1 
+
+//	* Problem 1076
+//		* Problem: 영문자(a ~ z) 1개가 입력되었을 때 그 문자까지의 알파벳을 순서대로 출력해보자.
+//		Scanner sc = new Scanner(System.in);
+//        
+//		char input = sc.next().charAt(0);
+//		
+//		char start = 'a';
+//		
+//		do {
+//			System.out.print(start + " ");
+//			start+=1;									// 알파벳 증
+//			
+//		} while(start <= input);
+
+//		input: d 	output: a b c d
+
+//	* Problem 1078
+//		* Problem: 정수(1 ~ 100) 1개를 입력받아 1부터 그 수까지 짝수의 합을 구해보자.
+//		
+//		Scanner sc = new Scanner(System.in);
+//    
+//		    int num = sc.nextInt();
+//		    int total = 0;
+//		    
+//		    for(int i=0; i<= num; i++){		        
+//		        if(i % 2 == 0){
+//		            total += i;
+//		        }
+//		    }
+//  
+//		    System.out.println(total);
+
+//			input: 8  output: 20
+	        
 	}	
 	
 }

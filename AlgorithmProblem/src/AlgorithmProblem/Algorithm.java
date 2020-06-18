@@ -294,6 +294,123 @@ public class Algorithm {
 
 //			input: 8  output: 20
 	        
+//	* Problem 1079
+//		* Problem: 'q'가 입력될 때까지 입력한 문자를 계속 출력하는 프로그램을 작성해보자.
+//			Scanner sc = new Scanner(System.in);
+//			
+//			while(true) {
+//				char word = sc.next().charAt(0);
+//				
+//				if(word == 'q') {
+//					System.out.println(word);
+//					break;
+//				}
+//				System.out.println(word);
+//			}
+
+//		when input is 'q', the function will be stopped after it prints out 'q'
+		
+//	* Problem 1081
+//		* Problem: 1부터 n까지, 1부터 m까지 숫자가 적힌 서로 다른 주사위 2개를 던졌을 때 나올 수 있는 모든 경우를 출력해보자.
+//		
+//			Scanner sc = new Scanner(System.in);
+//	        
+//	        int n = sc.nextInt();
+//	        int m = sc.nextInt();
+//	        
+//	        for(int i=1; i <= n; i++){
+//	            for(int j=1; j <= m; j++){
+//	                System.out.println(i+" " + j);			// for loop(j) runs every for loop(i);
+//	            }
+//	        }
+
+// 			input: 2 3   output: 1 1, 1 2, 1 3, 2 1, 2 2, 2 3
+        
+//	* Problem 1083
+//		* Problem: 3 6 9 게임을 하던 영일이는 3 6 9 게임에서 잦은 실수로 계속해서 벌칙을 받게 되었다.
+//		3 6 9 게임의 왕이 되기 위한 마스터 프로그램을 작성해 보자.
+//	
+//		 Scanner sc = new Scanner(System.in);
+//    
+//		    int num = sc.nextInt();
+//		    
+//		    for (int i=1; i<= num; i++){
+//		        if(i%10 == 3 || i%10 == 6 || i%10 == 9){
+//		            System.out.println("X");
+//		        }else {
+//		            System.out.println(i);
+//		        }
+//		    }
+//		    
+//		    input: 6   output: 1 2 X 4 5 X
+	
+//	* Problem 1084
+//		* Problem: 만들 수 있는 rgb 색의 정보를 오름차순(계단을 올라가는 순, 12345... abcde..., 가나다라마...)으로
+//		줄을 바꿔 모두 출력하고, 마지막에 그 개수를 출력한다.
+//
+//		 Scanner sc = new Scanner(System.in);
+//	        
+//	        int red = sc.nextInt();
+//	        int green = sc.nextInt();
+//	        int blue = sc.nextInt();
+//	        
+//	        int total = 0;
+//	        
+//	        if( red >= 0 && green >= 0 && blue >= 0) {
+//	        for(int i= 0; i < red; i++){
+//	            for(int j=0; j<green; j++){
+//	                for(int k=0; k<blue; k++){
+//	           
+//	                    System.out.println(i + " " + j + " " + k);
+//	                    total++;
+//	                }
+//	            }
+//	        }
+//	        System.out.println(total);
+//	        }				// it prints out as the answer, but it exceeds time.
+		
+		
+							//		Scanner sc = new Scanner(System.in);
+							//		int red = sc.nextInt();
+							//		int green = sc.nextInt();
+							//		int blue = sc.nextInt();
+							//		
+							//		BufferedWriter bf = new BufferedWriter(new OutputStreamWriter(System.out));   
+										// BufferedWriter:Java BufferedWriter class is used to provide buffering for Writer instances. It makes the performance fast.
+							
+							//			for(int i=0; i<red; i++) {
+							//				for(int j=0; j<green; j++) {
+							//					String str="";
+							//					for(int k=0; k<blue;k++) {
+							//						str += i+" "+j+" "+k+"\n";						
+							//					}
+							//					bf.write(str);
+							//					bf.flush();
+							//				}
+							//			}
+							//			System.out.println(red*green*blue);
+							//		}					// answer and it executes on time;   
+
+		
+//		    
+//		    input: 2 2 2 output:    0 0 0
+//								    0 0 1
+//								    0 1 0
+//								    0 1 1
+//								    1 0 0
+//								    1 0 1
+//								    1 1 0
+//								    1 1 1
+//								    8
+							    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
+		    
 	}	
 	
 }

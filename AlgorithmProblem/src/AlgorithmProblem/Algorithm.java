@@ -402,9 +402,32 @@ public class Algorithm {
 //								    1 1 0
 //								    1 1 1
 //								    8
-							    
-		    
-		    
+		
+//	* Problem 1085
+//		* Problem:h, b, c, s 가 공백을 두고 입력된다. h는 48,000이하, b는 32이하(단, 8의배수), c는 5이하, s는 6,000이하의 자연수이다.
+//
+//		    
+//		Scanner sc = new Scanner(System.in);
+//    
+//    int h = sc.nextInt();
+//    int b = sc.nextInt();
+//    int c = sc.nextInt();
+//    int s = sc.nextInt();
+//    double total = 0;
+//    
+//    if(h>0 && h<=48000 && 
+//        b>0 && b<=32 && b%8==0 && 
+//        c>0 && c<=5 &&
+//        s>0 &&s<=6000) {
+//        total = h*b*c*s;
+//    }
+//    
+//    Math.pow(밑,지수) 2의 10승
+//     ? = (h*b*c*s)/8
+//     ? / 1024byte == kB
+//     MB로 출력하기위에 1024로 한번더 나눠준다.
+//    double result = ((total/8)/Math.pow(2, 10))/Math.pow(2, 10);
+//    System.out.format("%.1f MB",result);
 		    
 		    
 		    

@@ -436,7 +436,30 @@ public class Algorithm {
 //	        }
 //	        
 //	        input: 1024 768 24 output: 2.25 MB
-        
+
+// * Problem 1087 
+//		* problem : 언제까지 합을 계산할 지, 정수 1개를 입력받는다. 단, 입력되는 자연수는 100,000,000이하이다.
+//		
+//		  Scanner sc = new Scanner(System.in);
+//	        
+//	        int total = 0;
+//	        int num = 0;
+//	        while(true){
+//	            
+//	             num = sc.nextInt();
+//	            
+//	            for(int i= 0; i<=num; i++){
+//	                if( num >= total){
+//	                    total += i;
+//	                    
+//	                }else{
+//	                    System.out.println(total);
+//	                    break;
+//	                }
+//	            }
+//	        }
+//	     
+//	        input: 57      output: 66
 		    
 		    
 		    

@@ -477,8 +477,25 @@ public class Algorithm {
 //			}
 //			System.out.println(sum);
 //	     
-//	        input: 57      output: 66   
-		    
+//	        input: 57      output: 66  
+		
+//	* Problem 1088
+//		Problem: 1부터 입력한 정수보다 작거나 같을 때까지 1씩 증가시켜 출력하되 3의 배수는 출력하지 않는다.
+//		 Scanner sc = new Scanner(System.in);
+//	        
+//	        int num = sc.nextInt();
+//	        if(num <= 100) {
+//	        for(int i=1; i< num; i++){
+//	            if( i % 3 == 0){
+//	                continue;
+//	            }else{
+//	                 System.out.println(i);
+//	            }
+//	        }
+//	        } 
+//	        
+//	        input:10 output: 1 2 4 5 7 8 10
+		
 		    
 	}	
 	

@@ -440,6 +440,7 @@ public class Algorithm {
 // * Problem 1087 
 //		* problem : 언제까지 합을 계산할 지, 정수 1개를 입력받는다. 단, 입력되는 자연수는 100,000,000이하이다.
 //		
+//		내풀이: 
 //		  Scanner sc = new Scanner(System.in);
 //	        
 //	        int total = 0;
@@ -458,10 +459,25 @@ public class Algorithm {
 //	                }
 //	            }
 //	        }
+		
+//		정답:
+//			Scanner sc = new Scanner(System.in);
+//			int num = sc.nextInt();
+//			int sum = 0;
+//			if(num <= 100000000){
+//				int x = 1;
+//				while(true){
+//					if(sum >= num){
+//						break;
+//					}else{
+//						sum += x;
+//						x++;	
+//					}
+//				}
+//			}
+//			System.out.println(sum);
 //	     
-//	        input: 57      output: 66
-		    
-		    
+//	        input: 57      output: 66   
 		    
 		    
 	}	

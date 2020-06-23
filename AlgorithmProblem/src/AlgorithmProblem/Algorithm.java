@@ -496,7 +496,78 @@ public class Algorithm {
 //	        
 //	        input:10 output: 1 2 4 5 7 8 10
 		
-		    
+//	* Problem 1089:
+//		* Problem: 시작 값(a), 등차의 값(d), 몇 번째 수 인지를 의미하는 정수(n)가 공백을 두고 입력된다.(모두 0 ~ 100)
+//
+//
+//		Scanner sc  = new Scanner(System.in);
+//        
+//	        int total = sc.nextInt();
+//	        int num2 = sc.nextInt();
+//	        int num3 = sc.nextInt();
+//        
+//        if(total <= 100 && num2 <= 100 && num3 <= 100){
+//                 for(int i=1; i<num3; i++){
+//                    total += num2;
+//                 }
+//        }
+//        System.out.println(total);
+//		
+//		input: 1 3 5   output: 13
+        
+//	* Problem 1090
+//		* Problem: 시작 값(a), 등비의 값(r), 몇 번째 인지를 나타내는 정수(n)가 공백을 두고 입력된다.(모두 0 ~ 10)
+        		  
+//        Scanner sc = new Scanner(System.in);
+//        
+//        long total = sc.nextInt();		// * variable should be determined as long because it exceeds int limitation when input values are 10 10 10; 
+//        long num1 = sc.nextInt();
+//        long num2 = sc.nextInt();
+//        
+//        if (total <= 10 && num1 <= 10 && num2 <= 10){
+//          for(int i=1; i<num2; i++){
+//              
+//              total *= num1;
+//             
+//          }
+//            
+//        }
+//        System.out.println(total);
+//		
+//        input: 10 10 10 output:10000000000
+       
+//	* Problem 1091
+//		* Problem: 시작 값(a), 곱할 값(m), 더할 값(d), 몇 번째 인지를 나타내는 정수(n)가 공백을 두고 입력된다.(a, m, d는 -50 ~ +50, n은 10이하의 자연수)
+	
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int a = sc.nextInt();
+//		int m = sc.nextInt();
+//		int d = sc.nextInt();
+//		int n = sc.nextInt();
+//		
+//		if( a >= -50 && a <= 50 && m >= -50 && m <= 50 && d >= -50 && d <= 50 && n <=10) {
+//			
+//			for(int i=1; i <n; i++) {
+//				
+//				a *= m;
+//				a +=d;
+//				
+//			}
+//		}
+//		System.out.println(a);
+		
+//		input: 1 -2 1 8  output: -85
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}	
 	
 }

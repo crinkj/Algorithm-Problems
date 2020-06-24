@@ -541,10 +541,10 @@ public class Algorithm {
 	
 //		Scanner sc = new Scanner(System.in);
 //		
-//		int a = sc.nextInt();
-//		int m = sc.nextInt();
-//		int d = sc.nextInt();
-//		int n = sc.nextInt();
+//		long a = sc.nextInt();
+//		long m = sc.nextInt();
+//		long d = sc.nextInt();
+//		long n = sc.nextInt();
 //		
 //		if( a >= -50 && a <= 50 && m >= -50 && m <= 50 && d >= -50 && d <= 50 && n <=10) {
 //			
@@ -559,13 +559,28 @@ public class Algorithm {
 		
 //		input: 1 -2 1 8  output: -85
 		
-		
-		
-		
-		
-		
-		
-		
+//	* Problem 1092
+//		* Problem: 같은 날 동시에 가입한 인원 3명이 규칙적으로 방문하는, 방문 주기가 공백을 두고 입력된다. (단, 입력값은 100이하의 자연수이다.);
+//			
+//		  Scanner sc = new Scanner(System.in);
+//	      
+//		      int num1 = sc.nextInt();
+//		      int num2 = sc.nextInt();
+//		      int num3 = sc.nextInt();
+//	      
+//	      int count = 0;
+//	      if(num1 <= 100 && num2 <= 100 && num3 <= 100){
+//	      while(true){
+//	          count++; 			// 하루 날을 늘려주면서 
+//	          if(count % num1 == 0 && count % num2 == 0 && count % num3 == 0){  // 늘어난 날이 가입날 나눳을때 나머지가 없는경우 맞는경
+//	              break;
+//	          }
+//	      }
+//	      
+//	  }
+//	  System.out.println(count);
+//			
+//	  input: 3 7 9   output: 63
 		
 		
 	}	

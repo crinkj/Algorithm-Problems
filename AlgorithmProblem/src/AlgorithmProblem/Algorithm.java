@@ -568,7 +568,7 @@ public class Algorithm {
 //		      int num2 = sc.nextInt();
 //		      int num3 = sc.nextInt();
 //	      
-//	      int count = 0;
+//	      int count = 0; // 조건문밖에 변수 저장
 //	      if(num1 <= 100 && num2 <= 100 && num3 <= 100){
 //	      while(true){
 //	          count++; 			// 하루 날을 늘려주면서 
@@ -580,9 +580,66 @@ public class Algorithm {
 //	  }
 //	  System.out.println(count);
 //			
-//	  input: 3 7 9   output: 63
+//	  input: 3 7 9   output: 63 
 		
+	
+//	* Problem 1093
+//		* Problem: 첫 번째 줄에 출석 번호를 부른 횟수인 정수 n이 입력된다. (1 ~ 10000) 두 번째 줄에는 무작위로 부른 n개의 번호(1 ~ 23)가 공백을 두고 순서대로 입력된다.
+
+//		Scanner scan = new Scanner(System.in);
+//
+//		// 총 학생 23칸이 출력 불린 횟수 저장
+//		// 모두 0으로 초기화 된다.
+//		int[] students = new int[23];
+//		// 몇 명을 부를지 저장하는 변수 n
+//		int n = scan.nextInt();
+//		// n회 만큼 출력을 부른다.
+//		// 반복 n회
+//		for (int i=1; i<n; i++)
+//		{
+//			// 선생님이 부른 학생의 번호 num
+//			int num = scan.nextInt();
+//			// num번 학생이 있는 배열의 칸은 n-1  
+//			students[num-1]++;	// 인덱스에 value가증가하는것
+//		}
+//
+//		// 모든 학생이 출력불린 횟수를 순서대로 출력
+//		for (int i=0; i<students.length; i++)
+//		{
+//			System.out.print(students[i] + " ");
+//		}
+//    
+//		input: 10								output: 1 2 1 1 2 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+//			   1 3 2 2 5 6 7 4 5 9
 		
+//	* Problem 1094
+//		* Problem: 번호를 부른 횟수(n, 1 ~ 10000)가 첫 줄에 입력된다.
+//		n개의 랜덤 번호(k, 1 ~ 23)가 두 번째 줄에 공백을 사이에 두고 순서대로 입력된다. (출석을 부른 번호 순서를 바꾸어 공백을 두고 출력한다.)
+//
+//        Scanner sc = new Scanner(System.in);
+//        
+//        int num = sc.nextInt();
+//        
+//        int[] arr = new int[num];
+//        for(int i=0; i <num; i++) {
+//        	int num1 = sc.nextInt();
+//        	arr[i] = num1;
+//        }
+//        for(int i=arr.length - 1; i >= 0; i--) {	// 배열 거꾸로할때는  0부터 시작하므로 무조건 length -1하고  중간에 >= 0 써줘야한다. 
+//        	System.out.print(arr[i] + " ");
+//        }
+//      
+//        input:  10							output: 5 8 9 7 6 6 3 2 4 10
+//        		10 4 2 3 6 6 7 9 8 5
+        
+        
+        
+        
+        
+        
+        
+        
+        
 	}	
 	
 }

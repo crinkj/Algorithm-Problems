@@ -1,5 +1,6 @@
 package AlgorithmProblem;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Algorithm {
@@ -808,7 +809,22 @@ public class Algorithm {
 //		       1 0 0 0 0 0 0 0 0 1					       1 0 0 0 0 0 0 0 0 1
 //		       1 1 1 1 1 1 1 1 1 1					       1 1 1 1 1 1 1 1 1 1
 		     
-    	   
+		 Scanner sc = new Scanner(System.in);
+	        int num = sc.nextInt();
+	        int[] arr = new int[num];
+	        
+	        int min = 0;
+	        int total = 0;
+	        for(int i=0; i<arr.length; i++){
+	            arr[i] = sc.nextInt(num);
+	        }
+	        Arrays.sort(arr);
+	        
+	       for(int i=0; i<arr.length; i++){
+	    	   min += arr[i];
+	           total += min;
+	       }
+	        System.out.println(total);
 	}	
 	
 }

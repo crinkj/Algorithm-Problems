@@ -7,7 +7,7 @@ public class Algorithm {
 	
 	public static void main(String args[]) {
 
-// 기초 알고리즘 100문제(Code Up)
+// 기초 알고리즘 100문제(Code Up 100)
 		
 // * Problem 1013 
 //		Problem: 2개의 정수가 공백으로 구분되어 입력된다.

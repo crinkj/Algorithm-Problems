@@ -1,9 +1,9 @@
-package AlgorithmProblem;
+package CodeUp_100;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Algorithm {
+public class Basic_100Problems{
 	
 	public static void main(String args[]) {
 

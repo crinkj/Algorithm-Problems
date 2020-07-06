@@ -1,10 +1,6 @@
-package AlgorithmProblem;
+package Baekjoon;
 
-
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class baekjoon{
+public class Greedy_Problems{
     public static void main(String[] args){
         
     	
@@ -68,5 +64,45 @@ public class baekjoon{
 //		        10000
 //		        50000
     	
+//    * Problem 5585: 타로는 자주 JOI잡화점에서 물건을 산다. JOI잡화점에는 잔돈으로 500엔, 100엔, 50엔, 10엔, 5엔, 1엔이 충분히 있고, 언제나 거스름돈 개수가 가장 적게 잔돈을 준다. 
+//    					타로가 JOI잡화점에서 물건을 사고 카운터에서 1000엔 지폐를 한장 냈을 때, 받을 잔돈에 포함된 잔돈의 개수를 구하는 프로그램을 작성하시오.
+//    	 Scanner sc = new Scanner(System.in);
+//          
+//         int pay = sc.nextInt();
+//         int[] arr = new int[]{500,100,50,10,5,1};
+//          
+//         int change = 1000 - pay;
+//         int count = 0;
+//         
+//         for(int i=0; i<arr.length; i++){       
+//                 if(change >= arr[i]){
+//                 
+//                   count += change/arr[i];
+//                   change = change%arr[i];
+//                 }
+//         }
+//          System.out.println(count);
+//          
+//          input: 380			output: 4  // 620원  500원 1개 100원 1개 십원 2
+//      * Problem 2217: 첫째 줄에 정수 N이 주어진다. 다음 N개의 줄에는 각 로프가 버틸 수 있는 최대 중량이 주어진다. 이 값은 10,000을 넘지 않는 자연수이다.
+//    	  
+//    	   Scanner sc = new Scanner(System.in);
+//    
+//		    int num = sc.nextInt();
+//		    
+//		    int[] arr = new int[num];
+//		    for(int i=0; i< num; i++){
+//		         arr[i] = sc.nextInt();  
+//		    }
+//		    Arrays.sort(arr);
+//		     
+//		    for(int i=0; i<arr.length; i++){
+//		        arr[i] = arr[i] * (num -i); //최대값 넣어주기 
+//		    }
+//		    Arrays.sort(arr); // 큰숫자로 정렬 
+//		    System.out.println(arr[num-1]); //마지막 최대값 출력
+//		    
+//		    input: 2 			output: 30
+//		    	   15 20    
     }    
 }

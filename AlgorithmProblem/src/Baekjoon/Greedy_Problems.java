@@ -142,7 +142,18 @@ public class Greedy_Problems{
 //    	* Problem 1541: 첫째 줄에 식이 주어진다. 식은 ‘0’~‘9’, ‘+’, 그리고 ‘-’만으로 이루어져 있고, 가장 처음과 마지막 문자는 숫자이다. 그리고 연속해서 두 개 이상의 연산자가 나타나지 않고, 5자리보다 많이 연속되는 숫자는 없다. 수는 0으로 시작할 수 있다.
 //         조건: -로시작하는 자리 뒤에 (를 추가하고 새로은 -로시작하기전에 )를 추가한다
     
-
+//    	Scanner sc = new Scanner(System.in);
+//    	
+//    	String num = sc.nextLine();
+//    	
+//    	for(int i=0; i< num.length(); i++){
+//    		String[] arr = num.split("");
+//    		 
+//    		if(arr[i] == "-") {
+//    			arr[i] = "-(";
+//    		};
+//    		
+//    	}
     
     
     

@@ -154,10 +154,57 @@ public class Greedy_Problems{
 //    		};
 //    		
 //    	}
+//    	* Problem 2875: 여러분은 여학생의 수 N, 남학생의 수 M, 인턴쉽에 참여해야하는 인원
+//    			K가 주어질 때 만들 수 있는 최대의 팀 수를 구하면 된다.
+
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt(); // Female
+//        int m = sc.nextInt(); // Male
+//        int k = sc.nextInt(); // Intern
+//        
+//        int count = 0; 
+//        
+//        // Condition for a competition
+//        // female should be more than 2 and 
+//        // male should be more than 1 and 
+//        // total number should be intern number + 3(competition team)
+//        while(n > 2 && m > 1 && k + 3 <= n + m){ 
+//        	
+//            n = n-2;
+//            m = m-1;
+//            count++; 
+//        }
+//        System.out.println(count);
+//    
+//        input: 6 3 2    output: 2
     
-    
-    
-    
+//		* Problem 1931: 여러분은 여학생의 수 N, 남학생의 수 M, 인턴쉽에 참여해야하는 인원
+//		K가 주어질 때 만들 수 있는 최대의 팀 수를 구하면 된다.
+//    	Scanner sc = new Scanner(System.in);
+//    	
+//    	int num = sc.nextInt();
+//    	
+//    	int[][] arr = new int[num][2];
+//    	
+//    	for(int i=0; i<num; i++) {
+//    		arr[i][0] = sc.nextInt();
+//    		arr[i][1] = sc.nextInt();
+//    	}
+//    	
+//    	Arrays.sort(arr, (a,b) -> a[1]==b[1]?a[0]-b[0]:a[1]-b[1]);
+//    	
+//    	int endTime = 0; // 끝나는 시간 
+//    	int count = 0; // 회의의 수
+//    	for(int i=0; i<num; i++){ 
+//    		if (arr[i][0] >= endTime) { // 회의 시작 시간이 이전 회의의 끝나는 시간 이후면 
+//    			endTime = arr[i][1]; // 끝나는 시간 바꿔주고 count++; // 회의 추가 } } System.out.print(count);
+//    		}
+//    	}
+
+    	
+    	
+    	
+    	
     
     
     

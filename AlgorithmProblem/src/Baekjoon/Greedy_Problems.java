@@ -200,8 +200,28 @@ public class Greedy_Problems{
 //    			endTime = arr[i][1]; // 끝나는 시간 바꿔주고 count++; // 회의 추가 } } System.out.print(count);
 //    		}
 //    	}
-
-    	
+//		* 별 출력  
+//    	 Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         for(int i=0; i<n; i++){
+//             for(int j=0; j<=i; j++) {
+//            	 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         for(int i = n; i > 0; i--) {
+//             for(int j = 0; j < i-1; j++) {                
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         
+//         입력 : 3		출력: *
+//         					 **
+//         					 ***
+//         					 **
+//         					 *
+       
     	
     	
     	

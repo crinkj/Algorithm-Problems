@@ -222,9 +222,33 @@ public class Greedy_Problems{
 //         					 **
 //         					 *
        
-    	
-    	
-    	
+//    	 Scanner sc = new Scanner(System.in);
+//         
+//         int n = sc.nextInt();
+//         
+//         for(int i=1;i<=n;i++) { // 중앙을 포함하므로 n까지 반복한다.
+// 			for(int j=1;j<=n;j++) { // 열은 기본적으로 n까지 반복한다.
+// 				if( j> n-i &&j<= n) { // 마지막 부분을 시작으로 -i값의 범위까지 별을 찍어준다.
+// 					System.out.print("*");
+// 				}
+// 				else System.out.print(" ");
+// 			}			
+// 			System.out.println();
+// 		}
+//         for(int i=n-1;i>0;i--) { // 윗 부분과 반대로 찍어야 하기 때문에 반복문의 조건을 바꿔준다.
+// 			for(int j=1;j<=n;j++) { // 열은 동일
+// 				if( j> n-i &&j<= n) { // 마지막 부분부터 n-i까지의 범위에
+// 					System.out.print("*"); // 별을 찍는다.
+// 				}
+// 				else System.out.print(" ");
+// 			}			
+// 			System.out.println();
+// 		}
+////          입력: 3    출력:    *
+////         				     **
+////         				    ***
+////         				     **
+////         				      *
     
     
     

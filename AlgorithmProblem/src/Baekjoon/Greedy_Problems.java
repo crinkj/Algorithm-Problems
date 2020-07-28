@@ -250,8 +250,27 @@ public class Greedy_Problems{
 ////         				     **
 ////         				      *
     
-    
-    
+ //   	* Problem 1120: 첫째 줄에 A와 B가 주어진다. A와 B의 길이는 최대 50이고, A의 길이는 B의 길이보다 작거나 같고, 알파벳 소문자로만 이루어져 있다.
+//    	 String x = scanner.next();
+//         String y = scanner.next();
+//
+//         int result = x.length();
+//
+//         for(int i=0;i<y.length()-x.length()+1;i++){
+//             int tmp=0;
+//
+//             for(int j=0;j<x.length();j++){
+//                 if(x.charAt(j)!=y.charAt(j+i)){
+//                     tmp++;
+//                 }
+//             }
+//             if(result > tmp){
+//                 result = tmp;
+//             }
+//         }
+//
+//         System.out.println(result);
+//		입력: X=”jimin”, Y=”minji”    출력: 4   
     
     
     }

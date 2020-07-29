@@ -273,6 +273,25 @@ public class Greedy_Problems{
 //		입력: X=”jimin”, Y=”minji”    출력: 4   
     
     
+    Scanner sc = new Scanner(System.in);
+        
+        int num = sc.nextInt();
+        int total = sc.nextInt();
+        
+        int[] arr = new int[num];
+        
+        int count = 0;
+        for(int i=0; i<num; i++){
+            int coin = sc.nextInt();
+            arr[i] = coin;
+        }
+        for(int i=num-1; i>=0; i--){
+            if(total > arr[i]){
+                count += total/arr[i];
+                total = total%arr[i]; 
+            }
+        }
+        System.out.println(count);
     }
     
     

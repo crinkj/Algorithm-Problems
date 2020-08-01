@@ -273,27 +273,54 @@ public class Greedy_Problems{
 //		입력: X=”jimin”, Y=”minji”    출력: 4   
     
     
-    Scanner sc = new Scanner(System.in);
-        
-        int num = sc.nextInt();
-        int total = sc.nextInt();
-        
-        int[] arr = new int[num];
-        
-        int count = 0;
-        for(int i=0; i<num; i++){
-            int coin = sc.nextInt();
-            arr[i] = coin;
-        }
-        for(int i=num-1; i>=0; i--){
-            if(total > arr[i]){
-                count += total/arr[i];
-                total = total%arr[i]; 
-            }
-        }
-        System.out.println(count);
-    }
+//    Scanner sc = new Scanner(System.in);
+//        
+//        int num = sc.nextInt();
+//        int total = sc.nextInt();
+//        
+//        int[] arr = new int[num];
+//        
+//        int count = 0;
+//        for(int i=0; i<num; i++){
+//            int coin = sc.nextInt();
+//            arr[i] = coin;
+//        }
+//        for(int i=num-1; i>=0; i--){
+//            if(total > arr[i]){
+//                count += total/arr[i];
+//                total = total%arr[i]; 
+//            }
+//        }
+//        System.out.println(count);
+//    }
+    	
+//    	* Problem 2562:
+    			// 첫 째 줄부터 아홉 번째 줄까지 한 줄에 하나의 자연수가 주어진다. 주어지는 자연수는 100 보다 작다.
+//	Scanner scan = new Scanner(System.in);
+//		
+//		int max = 0;
+//		int max_loc = 0;
+//		for(int i = 1; i <= 9; i++) {
+//			int num = scan.nextInt();
+//			if(num > max) {
+//				max = num;
+//				max_loc = i;
+//			}
+//		}
+//		System.out.println(max);
+//		System.out.println(max_loc);
+//	}
     
+    // 입력: 3				출력:85
+//		    29 					8
+//		    38
+//		    12
+//		    57
+//		    74
+//		    40
+//		    85
+//		    61
+    }
     
     
     

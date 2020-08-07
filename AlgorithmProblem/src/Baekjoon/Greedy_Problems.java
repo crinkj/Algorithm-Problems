@@ -321,36 +321,53 @@ public class Greedy_Problems{
 //		    85
 //		    61
 //    	* Problem 1138: N명의 사람들은 매일 아침 한 줄로 선다. 이 사람들은 자리를 마음대로 서지 못하고 오민식의 지시대로 선다.
-//    	Scanner sc = new Scanner(System.in);
-//	int n = sc.nextInt();
-//	int[] a = new int[n+1];
-//	int[] b = new int[n+1];
-//	
-//	for(int i = 1; i <= n; i++){
-//		a[i] = sc.nextInt();
-//	}
-//	
-//	for(int i = 1; i <= n; i++) {
-//		int j = 1;
-//		while(true) {
-//			if(a[i] == 0 && b[j] == 0) {
-//				b[j] = i;
-//				break;
-//			}
-//			else if(b[j] == 0) {
-//				a[i] = a[i] - 1;
-//			}
-//			j++;
-//		}
-//	}
-//	
-//	for(int i = 1; i <= n; i++) {
-//		System.out.print(b[i] + " ");
-//	}
-//
-//	입력: 4					출력: 4 2 1 3
-//		 2 1 1 0
+			//    	Scanner sc = new Scanner(System.in);
+			//	int n = sc.nextInt();
+			//	int[] a = new int[n+1];
+			//	int[] b = new int[n+1];
+			//	
+			//	for(int i = 1; i <= n; i++){
+			//		a[i] = sc.nextInt();
+			//	}
+			//	
+			//	for(int i = 1; i <= n; i++) {
+			//		int j = 1;
+			//		while(true) {
+			//			if(a[i] == 0 && b[j] == 0) {
+			//				b[j] = i;
+			//				break;
+			//			}
+			//			else if(b[j] == 0) {
+			//				a[i] = a[i] - 1;
+			//			}
+			//			j++;
+			//		}
+			//	}
+			//	
+			//	for(int i = 1; i <= n; i++) {
+			//		System.out.print(b[i] + " ");
+			//	}
+			//
+			//	입력: 4					출력: 4 2 1 3
+			//		 2 1 1 0
 //    }
+    // 로또 번호 생성 ( 조건: 로또 공 45개  추첨하는 번호는 6개)
+    	    	
+    	int[] lotto = new int[6];	
+    	int jackPot = 0;
+    	
+    	
+    	for(int i=0; i<6; i++) {
+    		
+    	  jackPot = (int)(Math.random()*45 + 1);
+    	  lotto[i] = jackPot;
+   
+    	}
+    	for(int j=0; j<lotto.length; j++) {
+    		
+    			System.out.print(lotto[j] + " ");
+    		
+    	}
     
     }
     

@@ -808,23 +808,43 @@ public class Basic_100Problems{
 //		       1 0 0 0 0 1 0 0 0 1					       1 0 0 0 0 1 0 0 0 1
 //		       1 0 0 0 0 0 0 0 0 1					       1 0 0 0 0 0 0 0 0 1
 //		       1 1 1 1 1 1 1 1 1 1					       1 1 1 1 1 1 1 1 1 1
-		     
-		 Scanner sc = new Scanner(System.in);
-	        int num = sc.nextInt();
-	        int[] arr = new int[num];
-	        
-	        int min = 0;
-	        int total = 0;
-	        for(int i=0; i<arr.length; i++){
-	            arr[i] = sc.nextInt(num);
-	        }
-	        Arrays.sort(arr);
-	        
-	       for(int i=0; i<arr.length; i++){
-	    	   min += arr[i];
-	           total += min;
-	       }
-	        System.out.println(total);
-	}	
+		
+// 		문자열 나누기
+		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String word = sc.nextLine();
+//		String[] newWord = word.split("");
+//		
+//		for(int i=0; i< newWord.length; i++) {
+//			
+//			System.out.println(newWord[i]);
+//			
+//		}
+//
+//		문자열 나누기(char이용)
+		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String word = sc.nextLine();
+//		char[] newWord = new char[word.length()];
+//		
+//		
+//		for(int i=0; i< newWord.length; i++) {
+//			
+//			newWord[i] = word.charAt(i);
+//			
+//			System.out.println(newWord[i]);
+//		}
+
+//		문자 뒤로 출력하기
+
+		
+		
+		
+		
+	}
+	
+	
 	
 }

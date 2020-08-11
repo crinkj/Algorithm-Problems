@@ -353,22 +353,36 @@ public class Greedy_Problems{
 //    }
     // 로또 번호 생성 ( 조건: 로또 공 45개  추첨하는 번호는 6개)
     	    	
-    	int[] lotto = new int[6];	
-    	int jackPot = 0;
-    	
-    	
-    	for(int i=0; i<6; i++) {
-    		
-    	  jackPot = (int)(Math.random()*45 + 1);
-    	  lotto[i] = jackPot;
-   
-    	}
-    	for(int j=0; j<lotto.length; j++) {
-    		
-    			System.out.print(lotto[j] + " ");
-    		
-    	}
+//    	int[] lotto = new int[6];	
+//    	int jackPot = 0;
+//    	
+//    	
+//    	for(int i=0; i<6; i++) {
+//    		
+//    	  jackPot = (int)(Math.random()*45 + 1);
+//    	  lotto[i] = jackPot;
+//   
+//    	}
+//    	for(int j=0; j<lotto.length; j++) {
+//    		
+//    			System.out.print(lotto[j] + " ");
+//    		
+//    	}
+//    
+    Scanner sc = new Scanner(System.in);
     
+    String no = sc.nextLine();
+    char[] arr = no.toCharArray();
+    
+    for(int i=0; i<arr.length; i++) {
+    	System.out.print(arr[i]);
+    	for(int j=arr.length - 1; j>i; j--) {
+    	System.out.print("0");
+    	}
+    	System.out.println();
+    }
+    
+    	
     }
     
 }

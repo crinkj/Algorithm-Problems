@@ -1,7 +1,7 @@
 package CodeUp_100;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Basic_100Problems{
 	
@@ -837,11 +837,24 @@ public class Basic_100Problems{
 //			System.out.println(newWord[i]);
 //		}
 
-//		문자 뒤로 출력하기
+//		문자열 중복 제거
+			
+		String string = "aabbccdefatafaz";
+
+			char[] chars = string.toCharArray();
+			Set<Character> charSet = new LinkedHashSet<Character>(); // 링크드어레이 이
+			for (char c : chars) {	// 캐릭터 돌려
+			    charSet.add(c);
+			}
+			
+			StringBuilder sb = new StringBuilder();
+			for (Character character : charSet) {   // 캐릭터 하나씩 늘어남
+			    sb.append(character);
+			}
+			System.out.println(sb.toString());
 
 		
-		
-		
+	
 		
 	}
 	

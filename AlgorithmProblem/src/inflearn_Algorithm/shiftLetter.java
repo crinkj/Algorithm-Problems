@@ -22,6 +22,7 @@ public class shiftLetter {
 	    System.out.println(word);
 
 }
+
 	// 방법2
 
 	public String solution(String str) {

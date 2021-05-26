@@ -9,7 +9,7 @@ public class problem7 {
 		Scanner sc = new Scanner(System.in);
 
 		String word = sc.nextLine();
-		if(prob.solution(word).equals(word.toLowerCase())) {  // 다 소문자로 바꾼후
+		if(prob.solution(word).equals(word.toLowerCase())) {  // 다 소문자로 바꾼후 앞에 단어랑 맞는지 안 맞는지 조건문
 			System.out.println("YES");
 		}else {
 			System.out.println("NO");

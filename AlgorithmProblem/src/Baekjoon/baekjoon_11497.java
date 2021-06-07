@@ -1,4 +1,4 @@
-package inflearn_Algorithm;
+package Baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;

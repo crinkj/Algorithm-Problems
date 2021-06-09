@@ -10,15 +10,37 @@ public class problem10 {
 		Scanner sc = new Scanner(System.in);
 		String word = sc.nextLine();
 		char letter = sc.next().charAt(0);
-		System.out.println(prob.solution(word,letter));
-
+		for(int x : prob.solution(word,letter)) {
+			System.out.print(x + " ");
+		}
 	}
 
-	public String solution(String word, char letter) {
-		String answer = "";
+	public int[] solution(String word, char letter) {
+		int count = 0;
 		char[] arr = new char[word.length()];
+		int[] answer = new int[word.length()];
 		arr = word.toCharArray();
 
+		for(int i=0; i <arr.length;i++) {
+			if(arr[i] == letter) {
+				count = 0;
+                answer[i] = 0;
+			}else {
+				count++;
+				answer[i] = count;
+			}
+		}
+		count = 0;
+		for(int i=arr.length-1; i>= 0; i--) {
+			if(arr[i] == letter) count=0;
+			else {
+				count++;
+				if(answer[i] >= count) {
+				 answer[i] = count;
+				}
+				//answer[i] = Math.min(answer[i],count); Math.min안에 두개의 숫자를넣으면 둘중에 작은값이 들어간다.
+			}
+		}
 		return answer;
 	}
 

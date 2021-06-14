@@ -23,11 +23,12 @@ public class problem14 {
 		for(int i=0; i<number;i++) {
 			visible[i] = sc.nextInt();
 		}
-		visible[visible.length] = 0;
 
 		for(int j=0; j<visible.length;j++) {
-			if(visible[j] < visible[j+1]) {
-				count++;
+			if(visible[j] != visible[visible.length-1]) {
+				if(visible[j] < visible[j+1]) {
+					count++;
+				}
 			}
 
 		}

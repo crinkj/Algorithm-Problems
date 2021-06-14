@@ -17,7 +17,7 @@ public class problem14 {
 
 	public int solution(int number) {
 		int[] visible = new int[number];
-		int count =0;
+		int count =1;
 
 		Scanner sc = new Scanner(System.in);
 		for(int i=0; i<number;i++) {

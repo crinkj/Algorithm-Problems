@@ -14,8 +14,10 @@ public class problem17 {
 
 		for(int i=2;i<=num; i++) {
 			if(ch[i] == 0) {
+				System.out.println(count);
 				count++;
 				for(int j=i;j<=num;j=j+i) {
+					System.out.println(j);
 					ch[j] = 1;
 				}
 			}

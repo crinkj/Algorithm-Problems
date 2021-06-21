@@ -14,12 +14,12 @@ public class problem17 {
 
 		for(int i=2;i<=num; i++) {
 			if(ch[i] == 0) {
-				System.out.println(count);
 				count++;
-				for(int j=i;j<=num;j=j+i) {
-					System.out.println(j);
-					ch[j] = 1;
+
+				for(int j=i;j<=num;j=j+i) { // for 문 여기서 돌리기 시작
+					ch[j] = 1; // 여기서 쌓이기 시작
 				}
+				
 			}
 		}
 		System.out.println(count);

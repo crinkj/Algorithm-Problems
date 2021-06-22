@@ -15,7 +15,6 @@ public class problem17 {
 		for(int i=2;i<=num; i++) {
 			if(ch[i] == 0) {
 				count++;
-
 				for(int j=i;j<=num;j=j+i) { // for 문 여기서 돌리기 시작
 					ch[j] = 1; // 여기서 쌓이기 시작
 				}

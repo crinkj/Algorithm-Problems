@@ -8,18 +8,29 @@ public class problem13 {
 		problem13 prob = new problem13();
 
 		Scanner sc = new Scanner(System.in);
-		int letter1 = sc.nextInt();
+		int letter = sc.nextInt();
 
-		int[] arr = new int[letter1];
-		for(int i=0; i< letter1; i++) {
+		int[] arr = new int[letter];
+		int[] answer = new int[letter];
+		for(int i=0; i< letter; i++) {
 			arr[i] = sc.nextInt();
 		}
 
-		for(int j=0; j<arr.length;j++) {
-			if(arr[j] >= letter1) {
-				System.out.print(arr[j] +" ");
+		answer[0] = arr[0];
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i] > arr[i-1]) {
+				answer[i] = arr[i];
+			}else {
+				answer[i] = 0;
 			}
 		}
+
+		for(int x : answer) {
+			if(x != 0) {
+				System.out.print(x + " ");
+			}
+		}
+
 
 	}
 }

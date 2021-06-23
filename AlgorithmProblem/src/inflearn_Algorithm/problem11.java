@@ -23,14 +23,14 @@ public class problem11 {
 		word = word + " " ;
 		int count = 1;
 
-		for(int i=0; i<word.length()-1;i++) {
-			if(word.charAt(i)== word.charAt(i+1)) {
+		for(int i=0; i<word.length()-1;i++) { // 문자이므로 charAt(i)를 사용해서 인덱스 번호를 나타낸다
+			if(word.charAt(i)== word.charAt(i+1)) { // 앞문자와 바로 뒤문자 비교시 맞을 경우 반복숫자를 늘려준다
 				count++;
 			}else {
 				answer += word.charAt(i);
 
 				if(count > 1) {
-					answer += String.valueOf(count);
+					answer += String.valueOf(count); // int를 string으로 바꿔준다. 문자열에 넣어야하기떄문
 					count = 1;
 				}
 			}

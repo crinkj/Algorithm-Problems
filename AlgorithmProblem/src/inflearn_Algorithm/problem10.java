@@ -21,7 +21,7 @@ public class problem10 {
 		int[] answer = new int[word.length()];
 		arr = word.toCharArray();
 
-		for(int i=0; i <arr.length;i++) {
+		for(int i=0; i <arr.length;i++) { // 왼쪽에서부터 먼저 각 문자의 거리를 구한다
 			if(arr[i] == letter) {
 				count = 0;
                 answer[i] = 0;
@@ -31,7 +31,7 @@ public class problem10 {
 			}
 		}
 		count = 0;
-		for(int i=arr.length-1; i>= 0; i--) {
+		for(int i=arr.length-1; i>= 0; i--) { // 오른쪽에서부터 거리를 구한 후 왼쪽에서 구한 거리와 비교하여 최소값을 구한다
 			if(arr[i] == letter) count=0;
 			else {
 				count++;

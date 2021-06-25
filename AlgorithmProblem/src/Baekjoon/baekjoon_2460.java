@@ -16,11 +16,11 @@ public class baekjoon_2460 {
 				arr[i][j] = sc.nextInt();
 			}
 		}
-		int max = 0;
-		int second = 0;
+		int max = 0; // 가장 큰숫자
+		int second = 0; // 대체할 숫자
 
 		for(int i=1; i<10;i++) {
-			second += arr[i-1][1];
+			second += arr[i-1][1]; // i가 0 배열을 계속 넣어준다
 			if(second > max) {
 				max = second;
 			}

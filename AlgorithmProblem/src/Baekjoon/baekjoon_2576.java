@@ -1,35 +1,38 @@
 package Baekjoon;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class baekjoon_2576 {
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-        boolean chk = false;
-        int sum = 0;
-        int min = Integer.MAX_VALUE;
+		int[] arr = new int[7];
+		ArrayList<Integer> answer = new ArrayList<Integer>();
 
-        for (int i = 0; i < 7; i++) {
-            int a = Integer.parseInt(br.readLine());
-            if(a % 2 == 1) {
-                chk = true;
-                sum += a;
-                min = Math.min(min, a);
-            }
-        }
-        if(!chk) bw.write("-1\n");
-        else {
-            bw.write(sum + "\n");
-            bw.write(min + "\n");
-        }
+		int min=0,total=0;
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = sc.nextInt();
+			if(arr[i] % 2 == 1) {
+				answer.add(arr[i]);
+				total+= arr[i];
+			}
+		}
+		Collections.sort(answer);
 
-        bw.flush();
-        br.close();
-        bw.close();
-    }
+		if(answer.size() > 0) {
+			System.out.println(total);
+			System.out.println(answer.get(0));
+		}else {
+			System.out.println(-1);
+		}
+
+
+
+
+
+
+
+	}
 }

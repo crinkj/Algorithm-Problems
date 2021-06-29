@@ -1,14 +1,14 @@
 package inflearn_Algorithm;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class problem26 {
 
 	public static void main(String[] args) {
+//		문제: A, B 두 개의 집합이 주어지면 두 집합의 공통 원소를 추출하여 오름차순으로 출력하는 프로그램을 작성하세요.
+
 		problem26 prob = new problem26();
 
 		Scanner sc = new Scanner(System.in);

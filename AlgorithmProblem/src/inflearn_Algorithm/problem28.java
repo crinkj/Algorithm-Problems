@@ -18,33 +18,21 @@ public class problem28 {
 			arr[i] = sc.nextInt();
 		}
 
-		int total = arr[0];
-		int other = 0;
-		int count = 0;
+		int total = 0, count=0, lt=0;
 		for(int i=1;i<n;i++) {
 			total += arr[i];
-			System.out.println(total);
 			if(total == m) {
 				count++;
-				total = 0;
-			}else if(total > m) {
-				total = 0;
-				total += arr[i];
 			}
-			other += arr[i];
-			System.out.println(other);
-			System.out.println("---------------------");
-			if(other == m) {
+		while(total >= m) { // 만약 더한 숫자가 m을 넘어갈경우 인덱스 0부터 빼준다
+			total -= arr[lt++];
+			if(total == m) {
 				count++;
-				other = 0;
-
-			}else if(other > m) {
-				other = 0;
-				other += arr[i];
-
 			}
+		}
 
 		}
+
 		System.out.println(count);
 	}
 }

@@ -7,25 +7,24 @@ public class problem30 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		int zeroToOne = sc.nextInt();
-		int[] arr = new int[num];
 
-		for(int i=0;i<num;i++) {
+		int n = sc.nextInt();
+		int k = sc.nextInt();
+		int[] arr = new int[n];
+
+		for(int i=0; i<n;i++) {
 			arr[i] = sc.nextInt();
 		}
+		int lt=0,count=0,answer=0;
 
-		int count = 0;
-
-		for(int i=0;i<num;i++) {
-			if(arr[i] == 0) {
-				count = 0;
-			}else {
-			while(arr[i] == 1) {
-				count++;
+		for(int i=0;i<n;i++) {
+			if(arr[i] == 0)count++;
+			while(count > k) {
+				if(arr[lt] == 0)count--;
+				lt++;
 			}
-			}
+			answer = Math.max(answer,i-lt+1);
 		}
-		System.out.println(count);
+		System.out.println(answer);
 	}
 }

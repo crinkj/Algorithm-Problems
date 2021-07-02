@@ -9,58 +9,7 @@ public class problem18 {
 //		첫 자리부터의 연속된 0은 무시한다.
 
 
-//	public static void main(String[] args) {
-//		problem18 prob  = new problem18();
-//
-//		Scanner sc = new Scanner(System.in);
-//		int num = sc.nextInt();
-//		int[] arr = new int[num];
-//
-//		for(int i=0; i<num; i++) {
-//			arr[i] = sc.nextInt();
-//		}
-//
-//		for(int x : prob.solution(num, arr)) {
-//			System.out.print(x + " ");
-//		}
-//	}
-//
-//	public ArrayList<Integer> solution(int n, int[] arr){
-//
-//		ArrayList<Integer> answer = new ArrayList<>();
-//
-//		for(int i=0; i< arr.length;i++) {
-//			int tmp = arr[i];
-//			int res = 0;
-//
-//			while(tmp > 0) { // 123 이면 1,2,3 쪼개서 0보다 클경우 while돌아가게
-//				int t = tmp%10;   // 123/10 = 3
-//				res = res*10+t;  // 0 = 0*10+3 = 3
-//				tmp = tmp/10; // 123/10 = 12
-//			}
-//
-//			if(tof(res)) answer.add(res);
-//
-//		}
-//
-//		return answer;
-//	}
-//
-//	public boolean tof(int num) {
-//
-//		if(num == 1) {
-//			return false;
-//		}
-//		for(int i=2; i<num; i++) {
-//			if(num%i == 0)
-//				return false;
-//		}
-//		return true;
-//
-//	}
-
 	public static void main(String[] args) {
-		problem18 prob = new problem18();
 
 		Scanner sc = new Scanner(System.in);
 
@@ -71,33 +20,38 @@ public class problem18 {
 			arr[i] = sc.nextInt();
 		}
 
-		for(int x: prob.solution(num, arr)) {
+		for(int x: solution(num, arr)) {
 			System.out.print(x + " ");
 		}
 	}
 
-	public ArrayList<Integer> solution(int num,int[] arr){
-		problem18 prob = new problem18();
+	public static ArrayList<Integer> solution(int num,int[] arr){
 		ArrayList<Integer> answer = new ArrayList<>();
 
 		for(int i=0; i< arr.length;i++) {
 
 			int tmp = arr[i];
-			int res =0;
+			int res = 0;
 
 			while(tmp > 0) {
-				int t = tmp%10;
-				res = res*10 + t;
-				tmp = tmp/10;
+				int t = tmp%10; // 1) 290을 입력받으면 290%10= 0;
+								// 2) 29%10 = 9;
+								// 3) 2%10 = 2;
+				res = res*10 + t; // 1) 0*10+0 = 0;
+								  // 2) 0*10+9 = 9;
+				 				  // 3) 9*10 + 2 = 92;
+				tmp = tmp/10; // 1) 29
+							  // 2) 29/10 = 2;
+							  // 3) 2/10 = 0;
 			}
 
-			if(prob.isTrue(res))answer.add(res);
+			if(isTrue(res))answer.add(res); // while문을 빠져나온 92가 소수인지 확인한다. 약수면 ArrayList에 담는다
 		}
 
 		return answer;
 	}
 
-	public boolean isTrue(int num) {
+	public static boolean isTrue(int num) {
 		if(num == 1) {
 			return false;
 		}

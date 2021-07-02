@@ -26,18 +26,18 @@ public class problem21 {
 			sum1=0;
 			sum2=0;
 			for(int j=0;j<arr.length;j++) {
-				sum1 +=arr[i][j];
-				sum2 += arr[j][i];
+				sum1 +=arr[i][j]; // 가로
+				sum2 += arr[j][i]; // 세로
 			}
-			answer = Math.max(answer, sum1);
-			answer = Math.max(answer, sum2);
+			answer = Math.max(answer, sum1); // 가로합과 정답중 큰 숫자 answer에 넣기
+			answer = Math.max(answer, sum2);// 세로합과 정답중 큰 숫자 answer에 넣기
 		}
 		sum1=0;
 		sum2=0;
 		for(int i=0;i<arr.length;i++) {
-				sum1 += arr[i][i];
-				sum2 += arr[i][arr.length-1-i];
-			answer = Math.max(sum1, answer);
+				sum1 += arr[i][i]; // 대각선 합 구하기
+				sum2 += arr[i][arr.length-1-i]; // 반대 대각선 합 구하기
+			answer = Math.max(sum1, answer); 
 			answer = Math.max(answer, sum2);
 		}
 		System.out.println(answer);

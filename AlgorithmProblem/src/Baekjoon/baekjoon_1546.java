@@ -26,6 +26,7 @@ public class baekjoon_1546 {
 			avg+=arr[i];
 		}
 		 avg = (double)avg*100/max/num;
+
 		System.out.println(avg);
 	}
 }

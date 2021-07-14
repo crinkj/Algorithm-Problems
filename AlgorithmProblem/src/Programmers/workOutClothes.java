@@ -33,7 +33,7 @@ public class workOutClothes {
 					 arr[i-1]--;
 					 arr[i]++;
 				 }
-				 else if(i < n&&arr[i+1] == 2) {
+				 else if(i < n-1&&arr[i+1] == 2) {
 					 arr[i]++;
 					 arr[i+1]--;
 				 }

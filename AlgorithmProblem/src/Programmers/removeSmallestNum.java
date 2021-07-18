@@ -13,19 +13,32 @@ public class removeSmallestNum {
 		System.out.println(solution(arr));
 	}
 	public static int[] solution(int[] arr) {
-        ArrayList<Integer> sample = new ArrayList<>();
-        int num = arr[0];
-        for(int i=0;i<arr.length;i++){
-            if(num <arr[i]){
-                num = arr[i];
-            }
-            sample.add(arr[i]);
-        }
-        Collections.sort(sample);
-        int[] answer = new int[sample.size()-1];
-        for(int i=1;i<sample.size();i++) {
-        	answer = sample.get(1).to;
-        }
+		int num = 0;
+
+		if(arr.length == 1) {
+			num = 1;
+		}else {
+			num = arr.length-1;
+		}
+		int[] answer = new int[num];
+		if(arr[0] == 10) {
+			answer[0] = -1;
+		}else {
+			int min = arr[0];
+			for(int i=1;i<arr.length;i++) {
+				if(min > arr[i]) {
+					min = arr[i];
+				}
+			}
+
+			for(int i=0;i<answer.length;i++) {
+					answer[i] = arr[i];
+			}
+
+		}
+		for(int x: answer) {
+			System.out.println(x);
+		}
 
 
         return answer;

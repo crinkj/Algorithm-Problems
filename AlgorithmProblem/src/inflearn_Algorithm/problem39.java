@@ -1,5 +1,8 @@
 package inflearn_Algorithm;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class problem39 {
 /*
  * 공주 구하기(https://cote.inflearn.com/contest/10/problem/05-06);
@@ -15,6 +18,19 @@ public class problem39 {
  */
 
 	public static void main(String[] args) {
+		int n=8;
+		int k=3;
 
-	}
+		int answer = 0;
+		Queue<Integer> arr = new LinkedList<>();
+
+		for(int i=1;i<=n;i++) arr.offer(i);
+		while(!arr.isEmpty()) {
+			for(int i=1;i<k;i++)arr.offer(arr.poll());
+			arr.poll();
+			if(arr.size()==1)answer++;
+		}
+System.out.println(answer);
+}
+
 }

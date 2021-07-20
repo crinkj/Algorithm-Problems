@@ -25,7 +25,6 @@ public class problem38 {
 			moves[i] = sc.nextInt();
 		}
 
-
 		System.out.print(solution(n,arr, m, moves));
 		}
 

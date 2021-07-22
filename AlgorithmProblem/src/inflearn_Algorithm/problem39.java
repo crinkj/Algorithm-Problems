@@ -28,7 +28,7 @@ public class problem39 {
 		while(!arr.isEmpty()) {
 			for(int i=1;i<k;i++)arr.offer(arr.poll());
 			arr.poll();
-			if(arr.size()==1)answer++;
+			if(arr.size()==1)answer = arr.poll();
 		}
 System.out.println(answer);
 }

@@ -2,6 +2,7 @@ package Programmers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class sumTwoNumbers {
 	/*
@@ -9,20 +10,17 @@ public class sumTwoNumbers {
 	 */
 	public static void main(String[] args) {
 			int [] problem = {5,0,2,7};
-			for(int x: solution(problem)) {
-				System.out.print(x +",");
-			}
+			System.out.println(solution(problem));
 
 
 	}
 	public static int[] solution(int[] prob) {
-		ArrayList<Integer> converter = new ArrayList<>();
-
-		Arrays.sort(prob);
+		List<Integer> converter = new ArrayList<Integer>();
 		for(int i=0;i<prob.length;i++) {
-			for(int k=1;k<prob.length;k++) {
-				if(!converter.contains(prob[i]+prob[k])) {
-					converter.add(prob[i]+prob[k]);
+			for(int k=i+1;k<prob.length;k++) {
+				int sum = prob[k]+prob[i];
+				if(!converter.contains(sum)) {
+					converter.add(sum);
 				}
 			}
 		}
@@ -32,6 +30,7 @@ public class sumTwoNumbers {
 			answer[i] = converter.get(i);
 		}
 
+		Arrays.sort(answer);
 		return answer;
 	}
 

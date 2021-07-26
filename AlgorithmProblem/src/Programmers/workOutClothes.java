@@ -29,11 +29,11 @@ public class workOutClothes {
 
 		  for(int i=0;i<n;i++) {
 			 if(arr[i] == 0) {
-				 if(i >0&&arr[i-1] == 2) {
+				 if(i >0 && arr[i-1] == 2) {
 					 arr[i-1]--;
 					 arr[i]++;
 				 }
-				 else if(i < n-1&&arr[i+1] == 2) {
+				 else if(i < n-1 && arr[i+1] == 2) {
 					 arr[i]++;
 					 arr[i+1]--;
 				 }

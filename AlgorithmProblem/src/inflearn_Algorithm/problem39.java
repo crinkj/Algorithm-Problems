@@ -30,7 +30,8 @@ public class problem39 {
 			arr.poll();
 			if(arr.size()==1)answer = arr.poll();
 		}
-System.out.println(answer);
+
+		System.out.println(answer);
 }
 
 }

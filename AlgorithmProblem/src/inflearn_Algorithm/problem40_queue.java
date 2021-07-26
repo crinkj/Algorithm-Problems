@@ -19,41 +19,43 @@ public class problem40_queue {
 	public static void main(String[] args) {
 		String word = "CBA";
 		String problem = "CBDAGE";
-		String answer = "";
-			for(int i=0;i<word.length();i++) {
-				for(int j=0;j<problem.length();j++) {
-					if(word.charAt(i) == problem.charAt(j)) {
-						answer += problem.charAt(j);
-						break;
-					}
-				}
-			}
-		if(word.equals(answer)) {
-			answer = "YES";
-		}else {
-			answer = "NO";
-		}
-		System.out.println(answer);
-//		System.out.println(solution(word,problem));
-	}
-
-//	public static String solution(String word, String problem) {
-//		String answer = "YES";
-//		Queue<Character> que = new LinkedList<>();
-//		for(char x : word.toCharArray()) {
-//			que.offer(x); // 큐에 필수 수업들을 다 넣는다
-//		}
-//		for(char x: problem.toCharArray()) {
-//			if(que.contains(x)) { // 만약 큐에 학생이짠 수업이 있을경우
-//				if(x!=que.poll()) { // 맨 처음
-//					return "NO";
+//		String answer = "";
+//			for(int i=0;i<word.length();i++) {
+//				for(int j=0;j<problem.length();j++) {
+//					if(word.charAt(i) == problem.charAt(j)) {
+//						answer += problem.charAt(j);
+//						break;
+//					}
 //				}
 //			}
+//		if(word.equals(answer)) {
+//			answer = "YES";
+//		}else {
+//			answer = "NO";
 //		}
-//		if(!que.isEmpty()) {
-//			return "NO";
-//		}
-//		return answer;
-//	}
+//		System.out.println(answer);
+		System.out.println(solution(word,problem));
+	}
+
+	public static String solution(String word, String problem) {
+		String answer = "YES";
+		Queue<Character> que = new LinkedList<>();
+		for(char x : word.toCharArray()) {
+			que.offer(x); // 큐에 필수 수업들을 다 넣는다
+		}
+		for(char x: problem.toCharArray()) {
+			if(que.contains(x)) { // 만약 큐에 학생이짠 수업이 있을경우
+				if(x!=que.poll()) { // 맨 처음
+					return "NO";
+				}
+
+
+			}
+		}
+		if(!que.isEmpty()) {
+			return "NO";
+		}
+		return answer;
+	}
 
 }

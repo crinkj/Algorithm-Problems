@@ -15,7 +15,6 @@ public class problem23 {
 			이 예에서 4번 학생이 전체 학생 중에서 같은 반이었던 학생 수가 제일 많으므로 임시 반장이 된다.
 			각 학생들이 1학년부터 5학년까지 속했던 반이 주어질 때, 임시 반장을 정하는 프로그램을 작성하시오.
 	*/
-		problem23 prob = new problem23();
 
 		Scanner sc = new Scanner(System.in);
 
@@ -29,10 +28,10 @@ public class problem23 {
 		}
 
 
-		System.out.println(prob.solution(arr));
+		System.out.println(solution(arr));
 	}
 
-	public int solution(int[][] arr) {
+	public static int solution(int[][] arr) {
 
 		int answer = 0;
 		int ans = 0;

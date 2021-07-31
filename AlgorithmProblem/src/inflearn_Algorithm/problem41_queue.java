@@ -24,12 +24,11 @@ public class problem41_queue {
 			que.poll();
 		}
 		int num = que.poll();
-		System.out.println(num);
 		int answer = 0;
 		Arrays.sort(arr);
 		for(int i=0;i<arr.length;i++) {
 			if(num == arr[i]) {
-				answer = i;
+				answer = i+1;
 			}
 		}
 		System.out.println(answer);

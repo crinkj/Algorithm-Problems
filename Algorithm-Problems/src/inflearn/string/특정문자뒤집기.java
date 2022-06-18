@@ -34,8 +34,6 @@ public class 특정문자뒤집기 {
                 start++;
                 end--;
             }
-            System.out.println(start);
-            System.out.println(end);
         }
         return String.valueOf(charArr);
 

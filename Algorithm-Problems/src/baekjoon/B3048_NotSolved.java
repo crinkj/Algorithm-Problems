@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class B3048 {
+public class B3048_NotSolved {
     /**
      * https://www.acmicpc.net/problem/3048
      *
@@ -29,7 +29,7 @@ public class B3048 {
 
         for (int i = 0; i < seconds; i++) {
             if (i == 0) {
-                firstGroup[firstGroupSize - i] = secondGroup[i];
+                firstGroup[firstGroupSize] = secondGroup[i];
                 secondGroup[i] = firstGroup[firstGroupSize - i];
             } else {
                 char firstChar = firstGroup[firstGroupSize - i - 1];

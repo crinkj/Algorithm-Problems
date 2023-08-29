@@ -1,5 +1,8 @@
-package inflearn.string;
+package inflearn;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class 문자찾기 {
@@ -17,24 +20,22 @@ public class 문자찾기 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String question = sc.next();
 
-        String givenWord = sc.nextLine().toLowerCase();
-        char givenLetter = Character.toLowerCase(sc.nextLine().charAt(0));
-
-        System.out.println(getCount(givenWord,givenLetter));
+        getAnswer(question);
     }
 
-    public static int getCount(String givenWord, char givenLetter){
-        int ifSame = 0;
+    public static void getAnswer(String word) {
+        char[] chars = word.toCharArray();
 
-        char[] charArr = givenWord.toCharArray();
-
-        for (char character : charArr) {
-            if (givenLetter == character){
-                ifSame++;
+        for (int i = 0; i < chars.length / 2; i++) {
+            if (Character.isAlphabetic(chars[i])) {
+                char first = chars[i];
+                chars[i] = chars[chars.length - i-1];
+                chars[chars.length - i] = first;
             }
         }
-        return ifSame;
+        System.out.println(new String(chars));
     }
 
 }

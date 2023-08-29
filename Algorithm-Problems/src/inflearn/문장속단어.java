@@ -1,4 +1,4 @@
-package inflearn.string;
+package inflearn;
 
 import java.util.Collections;
 import java.util.Scanner;

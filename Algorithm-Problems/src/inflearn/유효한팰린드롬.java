@@ -1,9 +1,9 @@
-package inflearn.string;
+package inflearn;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class 유효한팰린드롬 {
+public class  유효한팰린드롬 {
     /*
     설명: 앞에서 읽을 때나 뒤에서 읽을 때나 같은 문자열을 팰린드롬이라고 합니다.
          문자열이 입력되면 해당 문자열이 팰린드롬이면 "YES", 아니면 “NO"를 출력하는 프로그램을 작성하세요.

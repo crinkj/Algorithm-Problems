@@ -1,5 +1,8 @@
 package programmers;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class beginning_로그인성공 {
     public String solution(String[] id_pw, String[][] db) {
         String answer = "";
@@ -18,6 +21,7 @@ public class beginning_로그인성공 {
                 answer += arr[i];
             }
         }
+        Collections.sort(new ArrayList<String>(), Collections.reverseOrder());
         return answer;
     }
 }

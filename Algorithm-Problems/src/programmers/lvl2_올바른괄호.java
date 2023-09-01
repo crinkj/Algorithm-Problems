@@ -25,6 +25,7 @@ public class lvl2_올바른괄호 {
                 stack.pop();
             }
         }
+
         return stack.isEmpty();
     }
 }

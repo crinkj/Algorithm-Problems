@@ -23,7 +23,7 @@ public class 보이는학생 {
         for (int i = 1; i < people.length; i++) {
             if (first < people[i]) {
                 answer++;
-            first = people[i];
+                first = people[i];
             }
         }
         return answer;

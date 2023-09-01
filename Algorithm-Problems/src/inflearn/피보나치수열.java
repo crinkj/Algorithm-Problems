@@ -15,11 +15,8 @@ public class 피보나치수열 {
         int first = 1;
         int second = 1;
         int sum = 0;
-        System.out.print(first + " ");
-        System.out.print(second + " ");
         for (int i = 2; i < num; i++) {
-           sum = first + second;
-            System.out.print(sum + " ");
+            sum = first + second;
             first = second;
             second = sum;
         }

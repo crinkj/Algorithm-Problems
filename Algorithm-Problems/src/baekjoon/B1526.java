@@ -11,7 +11,8 @@ class B1526 {
      */
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-
+        String word = "test";
+        word = word.toLowerCase();
         int num = sc.nextInt();
         for (int i = num; i > 0; i--) {
             boolean isAnswer = false;

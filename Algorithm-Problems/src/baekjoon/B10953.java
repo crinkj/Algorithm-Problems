@@ -6,18 +6,9 @@ import java.util.Scanner;
 public class B10953 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int caseCount = sc.nextInt();
-        String[] cases = new String[caseCount];
-        for (int i = 0; i < caseCount; i++) {
-            cases[i] = sc.next();
-        }
-
-        for (String s : cases) {
-            String[] numbers = s.split(",");
-            int first =  Integer.parseInt(numbers[0]);
-            int second = Integer.parseInt(numbers[1]);
-            System.out.println(first + second);
-        }
+        String word = sc.nextLine();
+        int n  = sc.nextInt();
+        Character answer = word.charAt(n-1);
+        System.out.println(answer);
     }
 }
